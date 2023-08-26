@@ -35,11 +35,11 @@ const config: HardhatUserConfig = {
       chainId: DEFAULT_CHAINID,
       allowUnlimitedContractSize: true,
     },
-    goerli: {
-      url: process.env.GOERLI_URL || '',
+    sepolia: {
+      url: process.env.SEPOLIA_URL || '',
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
       gasPrice: 30000000000, // this is 30 Gwei
-      chainId: 5,
+      chainId: 11155111,
     },
   },
   paths: {
