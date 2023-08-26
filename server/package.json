@@ -8,7 +8,8 @@
     "build": "yarn generate:contract-types && tsc -b ./tsconfig.build.json",
     "test:hardhat": "yarn generate:contract-types && hardhat test --config ./hardhat.config.ts",
     "clean": "rm -rf dist && rm -f tsconfig.build.tsbuildinfo && hardhat clean --config ./hardhat.config.ts",
-    "generate:contract-types": "hardhat compile --config ./hardhat.config.ts"
+    "generate:contract-types": "hardhat compile --config ./hardhat.config.ts",
+    "lint": "solhint --max-warnings 0 \"contracts/**/*.sol\""
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
@@ -27,9 +28,11 @@
     "ethers": "^6.7.1",
     "hardhat": "^2.17.1",
     "hardhat-gas-reporter": "^1.0.8",
+    "solhint": "^3.6.2",
     "solidity-coverage": "^0.8.1",
     "ts-node": "^10.9.1",
     "typechain": "^8.2.0",
     "typescript": "^5.2.2"
-  }
+  },
+  "dependencies": {}
 }

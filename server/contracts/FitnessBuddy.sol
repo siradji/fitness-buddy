@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: GPL-3.0
-import 'hardhat/console.sol';
 
 pragma solidity >=0.8.2 <0.9.0;
 
@@ -30,7 +29,7 @@ This error occurs when a user tries to access functions exclusive to contract ow
 **/
 error UNAUTHORIZED_ACCESS();
 
-
+// Author: @surajauwal
 contract FitnessBuddy {
     address public admin;
     address[] private usersAddresses;
