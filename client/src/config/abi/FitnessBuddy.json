@@ -1,0 +1,234 @@
+ [
+{
+"inputs": [],
+"stateMutability": "nonpayable",
+"type": "constructor"
+},
+{
+"inputs": [],
+"name": "DAILY_CALORIES_THRESHOLD_EXCEEDED",
+"type": "error"
+},
+{
+"inputs": [],
+"name": "FOOD_ENTRY_MAX_CALORIES_THRESHOLD_EXCEEDED",
+"type": "error"
+},
+{
+"inputs": [],
+"name": "UNAUTHORIZED_ACCESS",
+"type": "error"
+},
+{
+"inputs": [],
+"name": "USER_DOES_NOT_EXIST",
+"type": "error"
+},
+{
+"anonymous": false,
+"inputs": [
+{
+"indexed": false,
+"internalType": "string",
+"name": "_food",
+"type": "string"
+},
+{
+"indexed": false,
+"internalType": "uint16",
+"name": "_calories",
+"type": "uint16"
+}
+],
+"name": "FOOD_ENTRY_ADDED",
+"type": "event"
+},
+{
+"inputs": [
+{
+"internalType": "string",
+"name": "_food",
+"type": "string"
+},
+{
+"internalType": "uint16",
+"name": "_calories",
+"type": "uint16"
+}
+],
+"name": "addFoodEntry",
+"outputs": [],
+"stateMutability": "nonpayable",
+"type": "function"
+},
+{
+"inputs": [],
+"name": "addUser",
+"outputs": [],
+"stateMutability": "nonpayable",
+"type": "function"
+},
+{
+"inputs": [],
+"name": "admin",
+"outputs": [
+{
+"internalType": "address",
+"name": "",
+"type": "address"
+}
+],
+"stateMutability": "view",
+"type": "function"
+},
+{
+"inputs": [
+{
+"internalType": "address",
+"name": "_user",
+"type": "address"
+},
+{
+"internalType": "uint16",
+"name": "_limit",
+"type": "uint16"
+}
+],
+"name": "changeUserCaloriesThreshold",
+"outputs": [],
+"stateMutability": "nonpayable",
+"type": "function"
+},
+{
+"inputs": [
+{
+"internalType": "address",
+"name": "_user",
+"type": "address"
+}
+],
+"name": "checkUserExist",
+"outputs": [
+{
+"internalType": "bool",
+"name": "",
+"type": "bool"
+}
+],
+"stateMutability": "view",
+"type": "function"
+},
+{
+"inputs": [],
+"name": "queryAllUsers",
+"outputs": [
+{
+"internalType": "address[]",
+"name": "",
+"type": "address[]"
+},
+{
+"internalType": "uint16[]",
+"name": "",
+"type": "uint16[]"
+}
+],
+"stateMutability": "view",
+"type": "function"
+},
+{
+"inputs": [],
+"name": "queryMyFoodEntries",
+"outputs": [
+{
+"components": [
+{
+"internalType": "uint16",
+"name": "date",
+"type": "uint16"
+},
+{
+"internalType": "string",
+"name": "food",
+"type": "string"
+},
+{
+"internalType": "uint16",
+"name": "calories",
+"type": "uint16"
+}
+],
+"internalType": "struct FitnessBuddy.FoodEntry[]",
+"name": "",
+"type": "tuple[]"
+}
+],
+"stateMutability": "view",
+"type": "function"
+},
+{
+"inputs": [
+{
+"internalType": "address",
+"name": "_user",
+"type": "address"
+}
+],
+"name": "queryUserFoodEntries",
+"outputs": [
+{
+"components": [
+{
+"internalType": "uint16",
+"name": "date",
+"type": "uint16"
+},
+{
+"internalType": "string",
+"name": "food",
+"type": "string"
+},
+{
+"internalType": "uint16",
+"name": "calories",
+"type": "uint16"
+}
+],
+"internalType": "struct FitnessBuddy.FoodEntry[]",
+"name": "",
+"type": "tuple[]"
+}
+],
+"stateMutability": "view",
+"type": "function"
+},
+{
+"inputs": [
+{
+"internalType": "address",
+"name": "",
+"type": "address"
+}
+],
+"name": "users",
+"outputs": [
+{
+"internalType": "address",
+"name": "id",
+"type": "address"
+},
+{
+"internalType": "bool",
+"name": "exists",
+"type": "bool"
+},
+{
+"internalType": "uint16",
+"name": "maxCaloriesThreshold",
+"type": "uint16"
+}
+],
+"stateMutability": "view",
+"type": "function"
+}
+]
