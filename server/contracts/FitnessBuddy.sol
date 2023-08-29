@@ -7,27 +7,27 @@ pragma solidity >=0.8.2 <0.9.0;
  @notice @dev
 This error occurs when a user tries to add food entry without an account
 **/
-error USER_DOES_NOT_EXIST();
+    error USER_DOES_NOT_EXIST();
 
 /**
  @notice @dev
 This error occurs when a user tries to add food entry with calories exceeding the max daily threshold.
 **/
-error FOOD_ENTRY_MAX_CALORIES_THRESHOLD_EXCEEDED();
+    error FOOD_ENTRY_MAX_CALORIES_THRESHOLD_EXCEEDED();
 
 
 /**
  @notice @dev
 This error occurs when a user tries to add food entry when daily max threshold is exceeded.
 **/
-error DAILY_CALORIES_THRESHOLD_EXCEEDED();
+    error DAILY_CALORIES_THRESHOLD_EXCEEDED();
 
 
 /**
  @notice @dev
 This error occurs when a user tries to access functions exclusive to contract owners.
 **/
-error UNAUTHORIZED_ACCESS();
+    error UNAUTHORIZED_ACCESS();
 
 // Author: @surajauwal
 contract FitnessBuddy {
@@ -39,7 +39,6 @@ contract FitnessBuddy {
     }
 
     struct User {
-        address id;
         mapping(uint16 => uint16) totalCaloriesToday;
         bool exists;
         uint16 maxCaloriesThreshold;
@@ -55,7 +54,7 @@ contract FitnessBuddy {
     mapping(address => User) public users;
 
 
-    event FOOD_ENTRY_ADDED(string _food, uint16 _calories);
+    event FOOD_ENTRY_ADDED(string _food, uint16 _calories, address _address);
 
     modifier onlyAdmin() {
         if(msg.sender != admin) revert UNAUTHORIZED_ACCESS();
@@ -67,7 +66,6 @@ contract FitnessBuddy {
         User storage newUser = users[msg.sender];
 
         newUser.exists = true;
-        newUser.id = msg.sender;
         newUser.maxCaloriesThreshold = uint16(2100);
 
         uint16 today = uint16(block.timestamp / 1 days);
@@ -83,7 +81,7 @@ contract FitnessBuddy {
     {
         User storage user = users[_user];
 
-       if(!user.exists) revert USER_DOES_NOT_EXIST();
+        if(!user.exists) revert USER_DOES_NOT_EXIST();
         user.maxCaloriesThreshold += _limit;
     }
 
@@ -120,7 +118,7 @@ contract FitnessBuddy {
         user.foodEntries.push(newFoodEntry); // Store food entry in user's storage
 
 
-        emit FOOD_ENTRY_ADDED(_food, _calories);
+        emit FOOD_ENTRY_ADDED(_food, _calories, msg.sender);
 
     }
 
@@ -156,6 +154,15 @@ contract FitnessBuddy {
 
     function checkUserExist (address _user) public view returns (bool) {
         User storage user = users[_user];
+
         return user.exists;
     }
+
+    function getUser() external view returns (FoodEntry[] memory, uint16, uint16) {
+        User storage user = users[msg.sender];
+        FoodEntry[] storage foodEntries = user.foodEntries;
+        uint16 today = uint16(block.timestamp / 1 days);
+        return (foodEntries, user.maxCaloriesThreshold, user.totalCaloriesToday[today]);
+    }
+
 }

@@ -69,7 +69,7 @@ describe('Fitness Buddy - Food Entry',  () => {
             fitnessBuddyContract.connect(user1).addFoodEntry(foodEntry1.food, foodEntry1.calories)
         )
             .to.emit(fitnessBuddyContract, event)
-            .withArgs(foodEntry1.food, foodEntry1.calories)
+            .withArgs(foodEntry1.food, foodEntry1.calories, user1.address)
 
     });
 
