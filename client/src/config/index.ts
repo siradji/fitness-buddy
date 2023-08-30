@@ -15,8 +15,9 @@ export const TESTNET_CONFIG = {
     EthereumRpcUrl: "https://eth-sepolia.g.alchemy.com/v2/voHtcOpgygGKOaMSpkt6aNz6JdKi_v0p",
     ExplorerURL: "https://sepolia.etherscan.io",
     FitnessBuddy: {
-        address: "0xa3f1770A93Ce348033B4f4a3FedCDe4fCe6aab35",
+        address: "0xa0650F067056Ff51E9D81f0E3670eA92D0690E03",
         abi: FitnessBuddyAbi,
+        defaultSignerAddress: '0xd8580008FF43Fcf299392aa8067e945d1A453254'
     }
 };
 

@@ -32,7 +32,7 @@ describe('Fitness Buddy - User',  () => {
         // getUser
         await fitnessBuddyContract.connect(user1).addUser()
         await fitnessBuddyContract.connect(user1).addFoodEntry(foodEntry1.food, foodEntry1.calories);
-        const [foodEntries, maxCaloriesThreshold, totalCaloriesToday] = await fitnessBuddyContract.connect(user1).getUser()
+        const [foodEntries, maxCaloriesThreshold, totalCaloriesToday] = await fitnessBuddyContract.connect(user1).getUser(user1.address)
 
         expect(maxCaloriesThreshold).to.equals(2100) //default threshold
         expect(totalCaloriesToday).to.equals(foodEntry1.calories)
@@ -49,5 +49,12 @@ describe('Fitness Buddy - User',  () => {
         await expect(
             fitnessBuddyContract.connect(user1).changeUserCaloriesThreshold(user1.address, 4000)
         ).to.revertedWithCustomError(fitnessBuddyContract, UNAUTHORIZED_ACCESS);
+    });
+
+    it('should revert when getting user not on the blockchain', async ()  => {
+        const USER_DOES_NOT_EXIST = 'USER_DOES_NOT_EXIST';
+        await expect(
+            fitnessBuddyContract.connect(user1).getUser(user1.address)
+        ).to.revertedWithCustomError(fitnessBuddyContract, USER_DOES_NOT_EXIST);
     });
 })

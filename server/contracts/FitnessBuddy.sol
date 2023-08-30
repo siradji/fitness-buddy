@@ -5,7 +5,7 @@ pragma solidity >=0.8.2 <0.9.0;
 
 /**
  @notice @dev
-This error occurs when a user tries to add food entry without an account
+This error occurs when a user tries to interact with contract without an account.
 **/
     error USER_DOES_NOT_EXIST();
 
@@ -158,8 +158,11 @@ contract FitnessBuddy {
         return user.exists;
     }
 
-    function getUser() external view returns (FoodEntry[] memory, uint16, uint16) {
-        User storage user = users[msg.sender];
+    function getUser(address _user) external view returns (FoodEntry[] memory, uint16, uint16) {
+        User storage user = users[_user];
+
+        if(!user.exists)  revert USER_DOES_NOT_EXIST();
+
         FoodEntry[] storage foodEntries = user.foodEntries;
         uint16 today = uint16(block.timestamp / 1 days);
         return (foodEntries, user.maxCaloriesThreshold, user.totalCaloriesToday[today]);

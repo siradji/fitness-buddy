@@ -1,8 +1,10 @@
-import {PropsWithChildren, ReactNode} from "react";
+import {PropsWithChildren} from "react";
 
-export function Card (props: PropsWithChildren<{heading: string}>): ReactNode {
+export const Card: React.FC<PropsWithChildren<{heading: string}>> =  (props) => {
     return (
-        <div className="dark-card-bg-image rounded-[20px] border backdrop-blur-[18px] border border-dark-200">
+        <div
+            className="dark-card-bg-image rounded-[20px] border backdrop-blur-[18px] border border-dark-200"
+        >
             <div className="p-5">
                 <div>
                     <h3>{props.heading}</h3>
