@@ -2,10 +2,9 @@ import clsx from "clsx";
 import { useNetwork } from "wagmi";
 import { ConnectKitButton } from "connectkit";
 import MetaMaskIcon from "./icons/Metamask";
-import {ReactNode} from "react";
+import React from 'react';
 
-export function PreConnectedButton({onClick,}: { onClick: (() => void) | undefined;
-}): JSX.Element {
+export const PreConnectedButton:React.FC<{ onClick: (() => void) | undefined}>  = ({onClick,})   => {
     return (
         <button
             data-testid="connect-button"
@@ -24,7 +23,7 @@ export function PreConnectedButton({onClick,}: { onClick: (() => void) | undefin
     );
 }
 
-function ConnectedButton({address, chain, onClick,}: { address: string; chain: string; onClick: (() => void) | undefined; }): ReactNode {
+const ConnectedButton: React.FC<{ address: string; chain: string; onClick: (() => void) | undefined; }> = ({address, chain, onClick,}) => {
     const walletText = address;
     return (
         <button
@@ -58,12 +57,13 @@ export function ConnectButton() {
     const { chain } = useNetwork();
     return (
         <ConnectKitButton.Custom>
-            {({ isConnected, address, show } : {isConnected: boolean, address: string, show: () => void}) =>
-                isConnected ? (
-                  <ConnectedButton address={address} chain={chain?.name as string} onClick={show} />
+            {({ isConnected, address, show }) => {
+                return isConnected ? (
+                    <ConnectedButton address={address as string} chain={chain?.name as string} onClick={show}/>
                 ) : (
-                   <PreConnectedButton onClick={show} />
-                )
+                    <PreConnectedButton onClick={show}/>
+                );
+            }
             }
         </ConnectKitButton.Custom>
     );

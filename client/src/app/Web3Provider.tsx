@@ -17,7 +17,7 @@ const config = createConfig(
 )
 
 
-const Web3Provider: FC<PropsWithChildren<{}>> = ({ children }) => {
+const Web3Provider: FC<any> = ({ children }) => {
 	const isMounted = useIsMounted()
 	return (
 		<WagmiConfig config={config}>

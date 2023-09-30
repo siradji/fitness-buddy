@@ -1,9 +1,9 @@
 "use client";
 import {ConnectButton} from "@/components/common/ConnectButton";
 import Link from "next/link";
-import {ReactNode} from "react";
+import React  from "react";
 
-export function Header (): ReactNode {
+export const  Header: React.FC<{}> =  () =>  {
     return (
             <header className="relative z-[1] flex flex-col w-full">
                 <div className="flex items-center justify-between px-5 md:px-10 lg:px-[120px] pt-8 pb-6 md:py-6 lg:py-8">

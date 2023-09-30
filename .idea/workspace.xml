@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="147cada5-0c6c-4689-9f4a-f8c0f883a39d" name="Changes" comment="" />
+    <list default="true" id="147cada5-0c6c-4689-9f4a-f8c0f883a39d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/Web3Provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/Web3Provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/FoodEntryForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FoodEntryForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/common/ConnectButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/common/ConnectButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/views/AdminView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/views/AdminView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/layout/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +83,7 @@
       <workItem from="1693337536561" duration="15078000" />
       <workItem from="1693397957550" duration="849000" />
       <workItem from="1693814845208" duration="122000" />
+      <workItem from="1696048897718" duration="1348000" />
     </task>
     <task id="LOCAL-00001" summary="chore: initial commit">
       <created>1693025608591</created>

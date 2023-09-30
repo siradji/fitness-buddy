@@ -1,10 +1,7 @@
 'use client'
 
-import { ConnectKitButton } from 'connectkit'
 import {FoodEntryForm} from "@/components/FoodEntryForm";
-import {ReactNode} from "react";
 import {Card} from "@/components/common/Card";
-import {UsersTable} from "@/components/UsersTable";
 import {useAccount} from "wagmi";
 import {FoodEntryItems} from "@/components/FoodEntryItems";
 import {User, useUserContext} from "@/context/UserContext";

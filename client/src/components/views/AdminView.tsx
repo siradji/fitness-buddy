@@ -33,7 +33,7 @@ export function AdminView (): JSX.Element {
     });
 
 
-    const { isLoading: changeCalTxLoading } = useWaitForTransaction({
+    const { isLoading: _changeCalTxLoading } = useWaitForTransaction({
         hash: data?.hash,
     });
 
@@ -70,7 +70,7 @@ export function AdminView (): JSX.Element {
     const formattedUsers = useMemo(() => {
         if(!users?.length) return
         const [addressArray, thresholdArray] = users as any
-        return addressArray.map((address, index) => {
+        return addressArray.map((address: string, index: number) => {
             return {
                 address,
                 threshold: thresholdArray[index]
@@ -135,9 +135,9 @@ export function AdminView (): JSX.Element {
                         />
                     </UsersTable.UserTableHeader>
 
-                    {formattedUsers.length && formattedUsers.map((user: any) => {
+                    {formattedUsers.length && formattedUsers.map((user: any, index: number) => {
                         return (
-                                <UsersTable.UserTableRow >
+                                <UsersTable.UserTableRow key={index} >
                                     <UsersTable.UserRowItem>
                                         {user.address}
                                     </UsersTable.UserRowItem>

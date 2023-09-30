@@ -1,6 +1,6 @@
 "use client";
 
-import {ReactNode, useState} from "react";
+import { useState} from "react";
 import {InputField} from "@/components/common/InputField";
 import {ConnectButton} from "@/components/common/ConnectButton";
 import {useAccount, useContractWrite, usePrepareContractWrite, useWaitForTransaction} from "wagmi";
