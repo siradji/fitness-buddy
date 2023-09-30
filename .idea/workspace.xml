@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="147cada5-0c6c-4689-9f4a-f8c0f883a39d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Suraj Auwal &lt;surajtauwal@gmail.com&gt;" />
+      </list>
+    </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2UVUsHn6lF4spGsUCtaUuvCKboX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/surajauwal/projects/fit-bud&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/surajauwal/projects/fit-bud/server/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/style" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="147cada5-0c6c-4689-9f4a-f8c0f883a39d" name="Changes" comment="" />
+      <created>1693024447213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693024447213</updated>
+      <workItem from="1693024448349" duration="896000" />
+      <workItem from="1693025348811" duration="95000" />
+      <workItem from="1693025447999" duration="9840000" />
+      <workItem from="1693066390045" duration="842000" />
+      <workItem from="1693067241500" duration="17508000" />
+      <workItem from="1693147566673" duration="1252000" />
+      <workItem from="1693160028069" duration="2068000" />
+      <workItem from="1693163655132" duration="290000" />
+      <workItem from="1693169587266" duration="6913000" />
+      <workItem from="1693248010307" duration="7900000" />
+      <workItem from="1693335556309" duration="1234000" />
+      <workItem from="1693337536561" duration="15078000" />
+      <workItem from="1693397957550" duration="849000" />
+      <workItem from="1693814845208" duration="122000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: initial commit">
+      <created>1693025608591</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693025608591</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore: added readme.md file to root project">
+      <created>1693025664877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693025664877</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: added .env.example file to projects">
+      <created>1693047249526</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693047249526</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feature: deployment support/settings for sepolia network">
+      <created>1693047305012</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693047305012</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: added solhint">
+      <created>1693066548089</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693066548089</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: added client">
+      <created>1693197057070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693197057070</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feature: get user">
+      <created>1693337461082</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693337461082</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feture: user dashboard + admin threshold increase">
+      <created>1693381680697</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693381680697</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="chore: initial commit" />
+    <MESSAGE value="chore: added readme.md file to root project" />
+    <MESSAGE value="chore: added .env.example file to projects" />
+    <MESSAGE value="feature: deployment support/settings for sepolia network" />
+    <MESSAGE value="chore: added solhint" />
+    <MESSAGE value="chore: added client" />
+    <MESSAGE value="feature: get user" />
+    <MESSAGE value="feture: user dashboard + admin threshold increase" />
+    <option name="LAST_COMMIT_MESSAGE" value="feture: user dashboard + admin threshold increase" />
+  </component>
+</project>
